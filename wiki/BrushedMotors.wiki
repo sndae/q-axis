@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Most Quad(or similar fly machine)use brushless motors. With MultiWii it's possible to drive brushed motor with your MOSFET.
+
+
+
+
+= Details =
+
+*MultiWii* use the analogwrite function of Arduino to generate PWM signal for ESC. using analogwrite, it could deliver PWM signal upto 490Hz. The disadvantage is the resolution of ESC signal is down to 256 step. This does not seems to be huge problem.
+
+Since it use analogwrite function, slightly change the code, you will be able to build a brushed motor quad, Using the same pins as you connected to your brushless ESC signal.
+
+
